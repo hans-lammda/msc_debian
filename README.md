@@ -80,8 +80,15 @@ The login page should be displayed
 </pre>
 
 # Wolfi Container 
-Find some container that supports arm64 for integration test 
-
-
+<pre>
+ echo "Hello Wolfi" > index.html
+ docker run -d -p 8080:8080 -v $PWD/index.html:/usr/share/nginx/html/index.html cgr.dev/chainguard/nginx
+</pre>
+## Verify with browser 
+Expect Hello Wolfi in the browser
+<pre>
+  $ firefox http://172.17.10.244:8080/
+</pre>
+http://172.17.10.244:8080/
 
 
