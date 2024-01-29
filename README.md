@@ -52,5 +52,36 @@ root@172.17.10.244's password:
 # ./hello.static 
 Hello 
 </pre>
+# Standard Container 
+A simple integration test involves ghcr.io/iotopen/edge-client:latest
+## Docker bridge 
+Sometimes the IP-address assigned by DHCP conflicts with the default ip for docker. 
+If so modify daemon.json 
+<pre>
+cat /etc/docker/daemon.json 
+{
+	    "bip": "192.168.100.1/24"
+}
+</pre>
+## Download and start container 
+<pre>
+  docker run -t -i  -p 8088:80 ghcr.io/iotopen/edge-client:latest
+</pre>
+Verify that container is running 
+<pre>
+  docker ps -a 
+CONTAINER ID   IMAGE                                COMMAND                  CREATED      STATUS      PORTS                                   NAMES
+51981b5a88f1   ghcr.io/iotopen/edge-client:latest   "/opt/iotopen/edge/s…"   3 days ago   Up 3 days   0.0.0.0:8088->80/tcp, :::8088->80/tcp   gracious_blackwell
+</pre>
+## Verify with browser 
+The login page should be displayed 
+<pre>
+  $ firefox http://172.17.10.244:8088/
+</pre>
+
+# Wolfi Container 
+Find some container that supports arm64 for integration test 
+
+
 
 
