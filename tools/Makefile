@@ -1,5 +1,7 @@
-LINARO_PATH=gcc-linaro-11.3.1-2022.06-x86_64_aarch64-linux-gnu.tar.xz
-LINARO_URL=https://snapshots.linaro.org/gnu-toolchain/11.3-2022.06-1/aarch64-linux-gnu/$(LINARO_PATH)
+LINARO_PATH=gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz
+LINARO_URL=https://releases.linaro.org/components/toolchain/binaries/latest-7/aarch64-linux-gnu/$(LINARO_PATH)
+
+
 
 all: clean download unpack 
 

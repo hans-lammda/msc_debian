@@ -1,4 +1,4 @@
-CROSS_COMPILE=/opt/gcc-linaro-11.3.1-2022.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu
+CROSS_COMPILE=/opt/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu
 CC=$(CROSS_COMPILE)-gcc
 
 TARGET=172.17.10.244
