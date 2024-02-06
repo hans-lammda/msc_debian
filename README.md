@@ -89,6 +89,22 @@ Expect Hello Wolfi in the browser
 <pre>
   $ firefox http://172.17.10.244:8080/
 </pre>
-http://172.17.10.244:8080/
+# Roadmap 
+## V1.0 
+With the upcoming regulations CRA and NIS2, vulnerabilities must be handled for the entire lifecycle of the product. 
+The <A HREF="https://github.com/hans-lammda/brconf">Cross compiler</A> is critical and must be provided as source code.
+<br>
+The current software must use the same compiler for all layers. 
+<br>
+
+| Layer    | Prototyping | Workshop 2024-01-30| April 2024-04-10|
+|----------|----------|----------|----------|
+| Container | N/A   | Chainguard <br> Debian <br> Static Golang |IO ports via /sys and /dev <br> portianer.io|
+| Linux Kernel   | Kernel tree and toolchain provided by MSC   | N/A   |Linaro GCC |
+| Hypervisor  | N/A   | N/A    |N/A|
+| Bootloader  | N/A   | N/A   |Linaro GCC|
+| Firmware   | N/A   | N/A   |Linaro GCC| 
+
+
 
 
