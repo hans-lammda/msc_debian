@@ -80,6 +80,11 @@ The login page should be displayed
 </pre>
 
 # Wolfi Container 
+<br>
+<A HREF="https://edu.chainguard.dev/chainguard/chainguard-images/how-to-use-chainguard-images/">Howto</A>
+<br>
+<br>
+
 <pre>
  echo "Hello Wolfi" > index.html
  docker run -d -p 8080:8080 -v $PWD/index.html:/usr/share/nginx/html/index.html cgr.dev/chainguard/nginx
